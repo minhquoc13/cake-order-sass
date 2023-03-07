@@ -130,6 +130,7 @@ p {
 
 .intro {
   overflow: hidden;
+  margin-bottom: 30px;
 }
 .intro-container {
   position: relative;
@@ -184,7 +185,7 @@ p {
   transition: transform 0.5s ease-in-out;
 }
 .cake-item:hover {
-  background-color: rgb(252, 241, 241);
+  background-color: rgb(241, 236, 236);
 }
 .cake-item:hover img {
   transition: transform 0.5s ease-in-out;
