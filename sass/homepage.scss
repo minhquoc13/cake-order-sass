@@ -105,9 +105,19 @@
         flex-direction: column;
         padding: 20px;
         border-bottom: 1px solid #e6e7e8;
+        transition: transform 0.5s ease-in-out;
+    }
+    &-item:hover {
+        background-color: rgb(252, 241, 241);
+        img {
+            transition: transform 0.5s ease-in-out;
+            object-fit: contain;
+            transform: scale(1.2);
+        }
     }
     &-thumbnail {
         margin-bottom: 30px;
+        overflow: hidden;
     }
     &-name {
         margin-bottom: 30px;
