@@ -175,7 +175,6 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .cake-item {
   display: flex;
@@ -197,7 +196,38 @@ p {
   overflow: hidden;
 }
 .cake-name {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+}
+.cake-sizes {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.cake-size {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100rem;
+  width: fit-content;
+  line-height: 1;
+}
+.cake-size:nth-child(1) {
+  background-color: #e6e6ea;
+}
+.cake-size:nth-child(2) {
+  background-color: #fed766;
+}
+.cake-size:nth-child(3) {
+  background-color: #2ab7ca;
+}
+.cake-size:nth-child(4) {
+  background-color: #fe4a49;
+}
+.cake-size:nth-child(5) {
+  background-color: #b3cde0;
 }
 .cake-price {
   margin-bottom: 10px;
