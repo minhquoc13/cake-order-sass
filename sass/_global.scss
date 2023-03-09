@@ -29,5 +29,19 @@ p {
 
 .container {
     max-width: 1360px;
+    padding: 0 15px;
     margin: 0 auto;
+}
+
+.button {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: -0.3px;
+    border-radius: 5px;
+    border: none;
+    white-space: nowrap;
 }
