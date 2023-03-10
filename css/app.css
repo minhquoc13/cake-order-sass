@@ -299,11 +299,15 @@ p {
 }
 .cake-detail .cake-sizes {
   gap: 20px;
+  margin-bottom: 50px;
 }
 .cake-detail .cake-size {
   padding: 15px;
   font-size: 20px;
   font-weight: 500;
+}
+.cake-detail .cake-size:hover {
+  opacity: 0.8;
 }
 .cake-detail .cake-counter {
   margin-bottom: 50px;
