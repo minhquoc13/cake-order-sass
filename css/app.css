@@ -42,6 +42,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "Roboto Slab", serif;
   line-height: 1;
   font-weight: 400;
@@ -384,6 +385,147 @@ p {
 .cake-detail-related-button-view_all-icon {
   width: 20px;
   height: 20px;
+}
+
+.cart-header {
+  display: flex;
+  align-items: center;
+  padding: 20px 20px;
+  background-color: lightgray;
+}
+.cart-checkbox {
+  min-width: 50px;
+}
+.cart-checkbox input {
+  width: 16px;
+  height: 16px;
+}
+.cart-products {
+  width: 45%;
+}
+.cart-size {
+  width: 11%;
+  text-align: center;
+}
+.cart-price {
+  width: 11%;
+  text-align: center;
+}
+.cart-quantity {
+  width: 11%;
+  text-align: center;
+}
+.cart-amount {
+  width: 11%;
+  text-align: center;
+}
+.cart-options {
+  width: 11%;
+  text-align: center;
+}
+.cart-list {
+  margin-top: 50px;
+}
+.cart-list-header {
+  margin-bottom: 10px;
+  border: 1px solid #e6e7e8;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 20px;
+}
+.cart-list-checkbox input {
+  width: 16px;
+  height: 16px;
+}
+.cart-list-header-shop {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.cart-list-icon {
+  width: 20px;
+  height: 20px;
+}
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e6e7e8;
+  border-radius: 10px;
+}
+.cart-item-checkbox {
+  min-width: 50px;
+}
+.cart-item-checkbox input {
+  width: 16px;
+  height: 16px;
+}
+.cart-item-main {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+.cart-item-image {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.cart-item-image img {
+  width: 100%;
+}
+.cart-item-size {
+  width: 11%;
+  text-align: center;
+}
+.cart-item-size select {
+  padding: 5px;
+}
+.cart-item-price {
+  width: 11%;
+  text-align: center;
+}
+.cart-item-quantity {
+  width: 11%;
+  text-align: center;
+}
+.cart-item-counter {
+  display: flex;
+  justify-content: center;
+  gap: 0 3px;
+}
+.cart-item-counter span {
+  cursor: pointer;
+}
+.cart-item-counter .minus,
+.cart-item-counter .plus {
+  width: 16px;
+  height: 16px;
+  font-weight: bold;
+  background: #f2f2f2;
+  border-radius: 4px;
+  padding: 8px 5px 8px 5px;
+  border: 1px solid #ddd;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-item-counter input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart-item-amount {
+  width: 11%;
+  text-align: center;
+}
+.cart-item-options {
+  width: 11%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */
