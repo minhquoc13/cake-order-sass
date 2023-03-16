@@ -41,6 +41,22 @@
   font-weight: 700;
 }
 
+.text-wait {
+  color: #ffcc00;
+}
+
+.text-danger {
+  color: #cc3300;
+}
+
+.text-success {
+  color: #4BB543;
+}
+
+.text-warning {
+  color: #ff9966;
+}
+
 body {
   margin: 0;
   font-family: "Roboto Slab", serif;
@@ -542,42 +558,6 @@ p {
 .order-user {
   margin-top: 30px;
 }
-.order-user-header {
-  display: flex;
-  align-items: center;
-  padding: 20px 20px;
-  background-color: lightgray;
-}
-.order-user-checkbox {
-  min-width: 50px;
-}
-.order-user-checkbox input {
-  width: 16px;
-  height: 16px;
-}
-.order-user-products {
-  width: 45%;
-}
-.order-user-size {
-  width: 11%;
-  text-align: center;
-}
-.order-user-price {
-  width: 11%;
-  text-align: center;
-}
-.order-user-quantity {
-  width: 11%;
-  text-align: center;
-}
-.order-user-amount {
-  width: 11%;
-  text-align: center;
-}
-.order-user-options {
-  width: 11%;
-  text-align: center;
-}
 .order-user-list {
   margin-top: 50px;
 }
@@ -587,10 +567,6 @@ p {
   justify-content: space-between;
   gap: 0 10px;
   padding: 20px;
-}
-.order-user-list-checkbox input {
-  width: 16px;
-  height: 16px;
 }
 .order-user-list-header-shop {
   display: flex;
@@ -618,7 +594,6 @@ p {
 .order-user-list-header-status-name {
   font-weight: bold;
   text-transform: uppercase;
-  color: #0071DC;
 }
 .order-user-item {
   display: flex;
