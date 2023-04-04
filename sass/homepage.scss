@@ -97,14 +97,18 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-between;
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
     }
-    &-item {
-        flex-basis: 22%;
+    &-item-container {
+        padding: 20px;
+        flex-basis: 25%;
         display: flex;
         flex-direction: column;
-        padding: 20px;
+    }
+    &-item {
+        flex-basis: 25%;
         border-bottom: 1px solid #e6e7e8;
         transition: transform 0.5s ease-in-out;
     }
@@ -117,11 +121,20 @@
         }
     }
     &-thumbnail {
-        margin-bottom: 30px;
         overflow: hidden;
         height: 200px;
         display: flex;
         align-items: center;
+        justify-content: center;
+        a {
+            width: 100%;
+            height: 100%;
+        }
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
     }
     &-name {
         margin-bottom: 20px;
@@ -185,6 +198,9 @@
     }
     .intro-list {
         padding: 0 10px;
+    }
+    .cake-item {
+        flex-basis: 33.333333333%;
     }
 }
 
@@ -252,20 +268,27 @@
         font-size: 16px;
         font-weight: 300;
     }
+    .cake-list {
+        padding: 0;
+    }
     .cake-item {
         flex-basis: 100%;
-        max-width: 100%;
+    }
+    .cake-item-container {
         flex-direction: row;
         gap: 10px;
         padding: 12px 10px;
+        align-items: center;
     }
     .cake-thumbnail {
         flex-basis: 50%;
-        width: 50%;
         height: 140px;
         margin-bottom: 0;
+        a {
+            height: 100%;
+        }
         img {
-            min-height: 100%;
+            max-height: 100%;
             width: 100%;
             object-fit: contain;
         }
@@ -279,8 +302,10 @@
         margin-bottom: 5px;
         font-weight: 700;
     }
-    .cake-sizes {
-        display: none;
+    .cake-list {
+        .cake-sizes {
+            display: none;
+        }
     }
     .cake-price {
         font-size: 14px;
