@@ -129,6 +129,55 @@ p {
   gap: 0 20px;
 }
 
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+}
+
+.user-photo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100rem;
+}
+
+.username {
+  font-size: 16px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  z-index: 99;
+  color: #000;
+}
+
+.dropdown-item {
+  padding: 7px 5px;
+  font-size: 18px;
+  transition: 0.2s ease-in;
+}
+
+.dropdown-item:hover {
+  background-color: #b3cde0;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 .hero {
   position: relative;
   max-width: 1360px;
