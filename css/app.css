@@ -123,10 +123,14 @@ p {
   justify-content: space-between;
   padding: 0 10px;
 }
-.header-menu {
+.header-right {
   display: flex;
   align-items: center;
   gap: 0 20px;
+}
+.header-login {
+  display: flex;
+  align-items: center;
 }
 
 .user-info {
@@ -373,6 +377,9 @@ p {
   .header-login {
     font-size: 18px;
   }
+  .username {
+    display: none;
+  }
   .hero-heading {
     font-size: 30px;
     margin-bottom: 10px;
@@ -493,9 +500,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.cake-detail .cake-image img {
-  max-width: 100%;
+  flex-direction: column;
 }
 .cake-detail .cake-content {
   max-width: 50%;
@@ -597,29 +602,34 @@ p {
   height: 20px;
 }
 
+.splide__arrow--prev {
+  position: absolute;
+  transform: translate(-100%, -50%);
+  left: -10px;
+}
+
+.splide__arrow--next {
+  position: absolute;
+  transform: translate(100%, -50%);
+  right: 10px;
+}
+
 @media screen and (max-width: 1024px) {
-  .cake-container {
+  .cake-detail-related .cake-container {
     padding: 0 10px;
   }
-  .cake-item {
+  .cake-detail-related .cake-item {
     flex-basis: 50%;
   }
 }
-@media screen and (max-width: 768px) {
-  .cake-item {
-    flex-basis: 50%;
-  }
-  .cake-detail-related-title {
-    font-size: 24px;
-  }
-}
-@media screen and (max-width: 645px) {
+@media screen and (max-width: 767px) {
   .cake-detail {
     margin-top: 10px;
     padding-bottom: 30px;
   }
   .cake-detail .cake-container {
     flex-direction: column;
+    gap: 30px;
   }
   .cake-detail .cake-image {
     max-width: 100%;
@@ -661,15 +671,11 @@ p {
   .cake-detail .cake-desc-content {
     font-size: 16px;
   }
-  .cake-item {
+  .cake-detail-related .cake-container {
+    padding: 0 10px;
+  }
+  .cake-detail-related .cake-item {
     flex-basis: 100%;
-  }
-  .cake-detail-related-title {
-    font-size: 24px;
-  }
-  .cake-detail-related-button-view_all {
-    margin-right: 10px;
-    font-size: 16px;
   }
 }
 .cart {
