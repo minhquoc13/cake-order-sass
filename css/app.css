@@ -113,6 +113,9 @@ p {
 }
 
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 99999;
   max-width: 100%;
   background-color: #0071DC;
 }
@@ -833,9 +836,6 @@ p {
 .order-user {
   margin-top: 30px;
 }
-.order-user-list {
-  margin-top: 50px;
-}
 .order-user-list-header {
   display: flex;
   align-items: center;
@@ -905,7 +905,6 @@ p {
 }
 .order-user-total {
   display: flex;
-  margin-top: 5px;
   flex-direction: column;
   padding: 20px;
   border: 1px solid #e6e7e8;
@@ -943,6 +942,10 @@ p {
   border: 2px solid #0071DC;
   border-radius: 5px;
   color: white;
+  transition: all 0.5s;
+}
+.button-buy-again:hover {
+  opacity: 0.7;
 }
 .button-contact-shop {
   padding: 10px;
@@ -950,6 +953,298 @@ p {
   font-size: 16px;
   border: 2px solid #0071DC;
   border-radius: 5px;
+  transition: all 0.5s;
+}
+.button-contact-shop:hover {
+  background-color: #0071DC;
+  color: white;
+}
+
+@media screen and (max-width: 767.98px) {
+  .order-user {
+    margin-top: 10px;
+  }
+  .order-user-list-header {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .order-user-list-header-shop {
+    gap: 5px;
+  }
+  .order-user-list-header-status {
+    gap: 5px;
+  }
+  .order-user-item {
+    padding: 10px;
+  }
+  .order-user-item-content {
+    font-size: 14px;
+  }
+  .order-user-total {
+    padding: 10px;
+  }
+  .order-user-total-top {
+    font-size: 15px;
+  }
+  .order-user-total-top-amount {
+    font-size: 17px;
+  }
+  .button-contact-shop {
+    font-size: 15px;
+  }
+}
+.checkout {
+  margin-top: 50px;
+}
+.checkout-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.checkout-summary {
+  max-width: 100%;
+  width: 100%;
+}
+.checkout-header {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #e6e7e8;
+}
+.checkout-products {
+  flex-basis: 45%;
+}
+.checkout-size {
+  flex-basis: 12%;
+  text-align: center;
+}
+.checkout-price {
+  text-align: center;
+}
+.checkout-quantity {
+  text-align: center;
+}
+.checkout-amount {
+  text-align: center;
+}
+.checkout-list-header {
+  margin-bottom: 10px;
+  border: 1px solid #e6e7e8;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  padding: 20px;
+}
+.checkout-list-header-shop {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+.checkout-list-icon {
+  width: 20px;
+  height: 20px;
+}
+.checkout-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #e6e7e8;
+}
+.checkout-item-main {
+  display: flex;
+  flex-basis: 45%;
+  align-items: center;
+  gap: 0 20px;
+}
+.checkout-item-name {
+  font-size: 18px;
+  font-weight: 500;
+}
+.checkout-item-image {
+  max-width: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.checkout-item-image img {
+  width: 100%;
+}
+.checkout-item-size {
+  width: 12%;
+  text-align: center;
+  font-weight: 500;
+}
+.checkout-item-price {
+  text-align: center;
+}
+.checkout-item-quantity {
+  text-align: center;
+}
+.checkout-item-amount {
+  text-align: center;
+  font-weight: 500;
+  font-size: 18px;
+  color: #0071DC;
+}
+.checkout-fees {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+.checkout-fees-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.checkout-fees-group-subtotal, .checkout-fees-group-shipping-fee, .checkout-fees-group-total {
+  width: 90px;
+  color: #897979;
+  font-size: 17px;
+  font-weight: 500;
+}
+.checkout-fees-group-total {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+}
+.checkout-shipping {
+  max-width: 400px;
+  width: 100%;
+}
+.checkout-shipping form {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.checkout-shipping label {
+  font-weight: bold;
+}
+.checkout-shipping input,
+.checkout-shipping select {
+  max-width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+.checkout-form {
+  margin-top: 30px;
+}
+.checkout-delivery-type {
+  margin-top: 10px;
+}
+.checkout-delivery-type-heading {
+  margin-bottom: 10px;
+}
+.checkout-delivery-type-desc {
+  margin-bottom: 10px;
+}
+.checkout-delivery-type input[type=radio] {
+  display: none;
+}
+.checkout-delivery-type label {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkout-delivery-type label:hover {
+  background-color: #f2f2f2;
+}
+.checkout-delivery-type input[type=radio]:checked + label {
+  background-color: #4CAF50;
+  color: white;
+}
+.checkout-button {
+  background-color: #0071DC;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  max-width: 100%;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.checkout-button:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .checkout-container {
+    padding: 0px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+  .checkout-shipping {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+  .checkout-shipping {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 568px) {
+  .checkout {
+    margin-top: 20px;
+  }
+  .checkout-container {
+    gap: 20px;
+  }
+  .checkout-summary {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #e6e7e8;
+  }
+  .checkout-heading {
+    font-size: 22px;
+  }
+  .checkout-header {
+    padding: 10px 10px;
+  }
+  .checkout-list-header {
+    padding: 10px;
+  }
+  .checkout-item {
+    padding: 10px;
+  }
+  .checkout-fees {
+    margin-top: 10px;
+    padding-right: 0;
+  }
+  .checkout-item-name,
+  .checkout-item-price,
+  .checkout-item-amount {
+    font-size: 14px;
+  }
+  .checkout-fees-group-subtotal,
+  .checkout-fees-group-shipping-fee {
+    font-size: 15px;
+  }
+  .checkout-fees-group-total {
+    font-size: 16px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

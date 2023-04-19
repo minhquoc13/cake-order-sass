@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/app.css">
+    <script src="./js/app.js"></script>
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <div class="header-logo">
+                    <a href="#" class="">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="text-24 font-bold text-white header-title">
+                    <a href="#">
+                        Order Cakes
+                    </a>
+                </div>
+                <div class="header-menu">
+                    <div class="header-checkout">
+                        <a href="#"><img src="./images/checkout-shopping-solid.svg" alt=""></a>
+                    </div>
+                    <div class="text-20 text-white font-medium header-login">
+                        <a href="#">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="checkout">
+        <div class="container">
+            <div class="checkout-container">
+                <div class="checkout-summary">
+                    <h1 class="checkout-heading">Checkout your order</h1>
+                    <div class="checkout-header">
+                        <div class="checkout-products">Products</div>
+                        <div class="checkout-size">
+                            Size
+                        </div>
+                        <div class="checkout-price">Price</div>
+                        <div class="checkout-quantity">Quantity</div>
+                        <div class="checkout-amount">Amount</div>
+                    </div>
+                    <div class="checkout-list">
+                        <div class="checkout-list-header">
+                            <div class="checkout-list-header-shop">
+                                <div class="checkout-list-icon">
+                                    <img src="./images/store-solid.svg" alt="">
+                                </div>
+                                <span class="checkout-list-shop_name font-bold">Bakery Shop</span>
+                            </div>
+                        </div>
+                        <div class="checkout-item">
+                            <a class="checkout-item-main" href="#">
+                                <div class="checkout-item-image">
+                                    <img src="./images/cake-image2.png" alt="">
+                                </div>
+                                <div class="checkout-item-name">Fully Customizable Sheet Cake</div>
+                            </a>
+                            <div class="checkout-item-size">S</div>
+                            <div class="checkout-item-price">₫160.000</div>
+                            <div class="checkout-item-quantity">
+                                1
+                            </div>
+                            <div class="checkout-item-amount">₫160.000</div>
+
+                        </div>
+                        <div class="checkout-item">
+
+                            <a class="checkout-item-main" href="#">
+                                <div class="checkout-item-image">
+                                    <img src="./images/cake-image1.png" alt="">
+                                </div>
+                                <div class="checkout-item-name">Fully Customizable Sheet Cake</div>
+                            </a>
+                            <div class="checkout-item-size">M</div>
+                            <div class="checkout-item-price">₫160.000</div>
+                            <div class="checkout-item-quantity">
+                                1
+                            </div>
+                            <div class="checkout-item-amount">₫160.000</div>
+
+                        </div>
+                    </div>
+                    <div class="checkout-fees">
+                        <div class="checkout-fees-group">
+                            <span class="checkout-fees-group-subtotal">Subtotal:</span>
+                            <span class="checkout-fees-group-subtotal">₫160.000</span>
+                        </div>
+                        <div class="checkout-fees-group">
+                            <span class="checkout-fees-group-shipping-fee">Shipping:</span>
+                            <span class="checkout-fees-group-shipping-fee">₫20.000</span>
+                        </div>
+                        <div class="checkout-fees-group">
+                            <span class="checkout-fees-group-total">Total:</span>
+                            <span class="checkout-fees-group-total">₫180.000</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout-shipping">
+                    <h1 class="checkout-heading">Payment Info</h1>
+                    <form class="checkout-form">
+                        <label for="full-name">Recipient's name</label>
+                        <input type="text" id="full-name" name="full-name" required>
+
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="address" required>
+                        <label for="city">City:</label>
+                        <input type="text" id="city" name="city" value="Da Nang" disabled="disabled" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                        <!--  -->
+                        <div class="checkout-delivery-type">
+                            <h3 class="checkout-delivery-type-heading">Choose a delivery method</h3>
+                            <input type="radio" id="standard" name="delivery-method" value="standard" checked>
+                            <label for="standard">Home delivery</label><br>
+                            <span class="checkout-delivery-type-desc">Your order will be delivered to the address you entered. (Delivery charges = 
+                                the number of kilometers from the store to your address X 2.000 VND)</span>
+                            <input type="radio" id="express" name="delivery-method" value="express">
+                            <label for="express">Pick up at the store</label><br>
+                            <span class="checkout-delivery-type-desc">
+                                No fees</span>
+                        </div>
+                        <a href="#" class="button checkout-button">Checkout</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
